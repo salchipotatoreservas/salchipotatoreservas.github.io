@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salchipotato Manizales - Eventos y Reservas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <!-- Librerías de efectos visuales -->
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+</head>
+<body>
+    <!-- Canvas para fuegos artificiales -->
+    <canvas id="fireworks-canvas"></canvas>
+
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="Img/Logo.png" alt="Logo Salchipotato" class="logo-img">
+        </div>
+    </header>
+    <main class="site-content">
+
+        <!-- Botón Flotante de Redes Sociales -->
+        <div class="floating-social-button">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+        </div>
+
+        <!-- Menú de Redes Sociales -->
+        <div class="social-menu-container">
+            <a href="https://www.facebook.com/profile.php?id=61575544184639" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/salchipotatosmanizales/" class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/573007097006?text=Hola%20deseo%20%20hacer%20una%20reserva." class="social-icon whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@salchipotatomanizales?lang=es" class="social-icon tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+            <section class="hero-section">
+                <h1 class="hero-title">Hazlo especial !hazlo con nosotros...</h1>
+                <div class="dynamic-text-container">
+                    <span class="dynamic-text"></span>
+                </div>
+                <a href="https://wa.me/573007097006?text=Hola%20deseo%20%20hacer%20una%20reserva." target="_blank" class="cta-button">Reserva Ahora</a>
+            </section>
+
+            <section class="event-section">
+                <h2 class="event-section-title">¡Tu Evento Ideal Comienza Aquí!</h2>
+                <div class="event-slider-container">
+                    <div class="event-slider">
+                        <div class="event-slide">
+                            <img src="Img/Salchipotato-Cumpleaños.jpeg" alt="Cumpleaños" class="event-slide-bg">
+                            <div class="event-slide-overlay"></div>
+                            <div class="event-slide-content">
+                                <h3>Cumpleaños</h3>
+                                <p>Celebra tu día especial con nosotros.</p>
+                                <a href="https://wa.me/573007097006?text=Hola%20deseo%20%20hacer%20una%20reserva." target="_blank" class="contract-button">Reserva Ahora</a>
+                            </div>
+                        </div>
+                        <div class="event-slide">
+                            <img src="Img/Salchipotato-Chipre.jpeg" alt="Eventos Corporativos" class="event-slide-bg">
+                            <div class="event-slide-overlay"></div>
+                            <div class="event-slide-content">
+                                <h3>Eventos Corporativos</h3>
+                                <p>El ambiente perfecto para tus reuniones de empresa.</p>
+                                <a href="https://wa.me/573007097006?text=Hola%20deseo%20%20hacer%20una%20reserva." target="_blank" class="contract-button">Reserva Ahora</a>
+                            </div>
+                        </div>
+                        <div class="event-slide">
+                            <img src="Img/Salchipotato-Muestra.jpeg" alt="Reuniones Familiares" class="event-slide-bg">
+                            <div class="event-slide-overlay"></div>
+                            <div class="event-slide-content">
+                                <h3>Reuniones Familiares</h3>
+                                <p>Disfruta de momentos inolvidables con tus seres queridos.</p>
+                                <a href="https://wa.me/573007097006?text=Hola%20deseo%20%20hacer%20una%20reserva." target="_blank" class="contract-button">Reserva Ahora</a>
+                            </div>
+                        </div>
+                        <div class="event-slide">
+                            <img src="Img/Salchipotato-Muestra.jpg" alt="Aniversarios" class="event-slide-bg">
+                            <div class="event-slide-overlay"></div>
+                            <div class="event-slide-content">
+                                <h3>Fechas Especiales</h3>
+                                <p>Celebra el amor y los años juntos en un lugar mágico.</p>
+                                <a href="https://wa.me/573007097006?text=Hola%20deseo%20%20hacer%20una%20reserva." target="_blank" class="contract-button">Reserva Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-nav-button prev">&lt;</button>
+                    <button class="slider-nav-button next">&gt;</button>
+                </div>
+            </section>
+
+            <!-- ==================================================
+                 SECCIÓN PARCHE
+                 ================================================== -->
+            <section id="parche-section">
+                <h2 class="parche-section-title">Nos adaptamos a todo tipo de <span>Parche</span></h2>
+                <div class="parche-slider-container">
+                    <div class="parche-background"></div>
+                    <div class="parche-content">
+                        <h3 class="parche-subtitle"><i class="fas fa-table"></i> Reserva una mesa para toda ocasión:</h3>
+                        <p class="parche-text">En pareja</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/573007097006?text=Hola%20deseo%20%20hacer%20una%20reserva." target="_blank" class="parche-cta-button">¡A un Clic del Parche!</a>
+            </section>
+
+            <section class="menu-section">
+                <h2 class="menu-section-title">Deléitate con Nuestra Carta: Sabores para Cada Celebración</h2>
+                <p class="menu-subtitle">Escoge entre nuestro menú para tu ocasión</p>
+                <div class="menu-slider-container">
+                    <div class="menu-slider">
+                        <div class="menu-slide">
+                            <img src="Img/Cartaadverso.jpeg" alt="Menú 1">
+                        </div>
+                        <div class="menu-slide">
+                            <img src="Img/Cartareverso.jpeg" alt="Menú 2">
+                        </div>
+                    </div>
+                    <button class="slider-nav-button menu-prev">&lt;</button>
+                    <button class="slider-nav-button menu-next">&gt;</button>
+                </div>
+            </section>
+
+            <section class="reviews-section">
+                <h2 class="reviews-section-title">Experiencias Inolvidables</h2>
+                <div class="google-reviews-header">
+                    <img src="Img/Google-Reseñas.png" alt="Google Reviews" class="google-reviews-logo">
+                    <h3 class="google-reviews-title">Nuestras Reseñas en Google</h3>
+                </div>
+                <div class="reviews-slider-container">
+                    <div class="reviews-slider">
+                        <div class="review-slide">
+                            <img src="Img/Reseña-One.png" alt="Reseña 1" class="review-image">
+                        </div>
+                        <div class="review-slide">
+                            <img src="Img/Reseña-Two.png" alt="Reseña 2" class="review-image">
+                        </div>
+                        <div class="review-slide">
+                            <img src="Img/Reseñas-Three.png" alt="Reseña 3" class="review-image">
+                        </div>
+                    </div>
+                    <button class="slider-nav-button reviews-prev">&lt;</button>
+                    <button class="slider-nav-button reviews-next">&gt;</button>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2 class="faq-section-title">Preguntas Frecuentes</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Cómo puedo reservar un evento?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Puedes reservar tu evento contactándonos a través de nuestro botón de WhatsApp, llamándonos directamente o enviándonos un correo electrónico. Nuestro equipo te guiará en todo el proceso.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Qué tipo de eventos puedo celebrar en Salchipotato?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>En Salchipotato puedes celebrar cumpleaños, reuniones familiares, eventos corporativos, aniversarios y cualquier otra ocasión especial que desees. Adaptamos nuestros espacios y servicios a tus necesidades.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Ofrecen paquetes personalizados para eventos?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos paquetes personalizados para eventos. Nos adaptamos a tu presupuesto y preferencias, creando una experiencia única y memorable para ti y tus invitados.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>¿Cuál es la capacidad máxima para eventos?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nuestra capacidad varía según el tipo de evento y la configuración del espacio. Te invitamos a contactarnos para discutir los detalles de tu evento y ofrecerte la mejor opción.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="our-story-section">
+                <h2 class="our-story-section-title">Nuestra Historia: Sabor y Tradición en Cada Plato</h2>
+                <div class="story-content">
+                    <div class="story-text">
+                        <p>Desde nuestros inicios, en Salchipotato Manizales nos hemos dedicado a crear experiencias culinarias inolvidables. Con 25 años de experiencia, nos certificamos como uno de los mejores en el sector. Nacimos de la pasión por la buena comida y el deseo de ofrecer un espacio donde la calidad y el sabor se fusionen con momentos especiales.</p>
+                        <p>Cada ingrediente es seleccionado con esmero, y cada plato es preparado con la dedicación que nos caracteriza. Nos enorgullece ser parte de tus celebraciones, desde un simple almuerzo hasta los eventos más importantes de tu vida.</p>
+                        <p>Más que un restaurante, somos un punto de encuentro para amigos y familias, un lugar donde las risas y los buenos recuerdos se cocinan a fuego lento. ¡Gracias por ser parte de nuestra historia!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="locations-section">
+                <h2 class="locations-section-title">Encuentranos: Ven conoce y cotiza con excelentes precios</h2>
+                <div class="locations-container">
+                    <div class="location-card">
+                        <div class="location-content">
+                            <h3>Salchipotato Chipre</h3>
+                            <div class="animated-hand">
+                                <i class="fas fa-hand-point-down"></i>
+                            </div>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Cra.+11+%237a+-+10,+Manizales,+Caldas+Barrio+chipre" target="_blank" class="location-button">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Clic para ver la ubicación</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <script src="script.js"></script>
+    
+<!-- ===== Botón flotante de WhatsApp (aparece tras 28 segundos) ===== -->
+  <a href="https://wa.me/573007097006?text=Hola%20deseo%20%20hacer%20una%20reserva." class="whatsapp-float hidden"
+    target="_blank" aria-label="Contáctanos por WhatsApp">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"
+      class="whatsapp-icon">
+  </a>
+
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 13px;
+      background: linear-gradient(145deg, #00d084, #00735a);
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      box-shadow: 0 0 25px rgba(0, 255, 170, 0.4);
+      animation: signalPulse 2.5s infinite ease-in-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(0, 255, 170, 0.6);
+    }
+
+    .whatsapp-icon {
+      width: 45px;
+      height: 45px;
+      filter: brightness(0) invert(1);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes signalPulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 170, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 0 16px rgba(0, 255, 170, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 170, 0);
+      }
+    }
+  </style>
+
+  <script>
+    // Mostrar el botón después de 28 segundos
+    setTimeout(() => {
+      document.querySelector('.whatsapp-float').classList.remove('hidden');
+    }, 2000);
+  </script>
+
+
+  <section class="contact-section">
+                <h2 class="contact-section-title">Contáctanos</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <p><strong>Dirección:</strong> Barrio Chipre, Cra. 11 #7a - 10, Manizales, Caldas.</p>
+                        <p><strong>Teléfono:</strong> 3007097006</p>
+                        <p><strong>Email:</strong> salchipotato@protonmail.com</p>
+                        <div class="social-links">
+                            <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61575544184639" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/salchipotatosmanizales/" target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/573007097006?text=Hola%20deseo%20%20hacer%20una%20reserva." target="_blank" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.tiktok.com/@salchipotatomanizales?lang=es" target="_blank" class="social-link tiktok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+  <!-- end info section -->
+
+    <footer class="site-footer">
+        <div class="footer-content">
+                <p class="developer-credit">Web hecha por <a href="https://daybit.co" target="_blank">DayBit.co</a> para Salchipotato Manizales</p>
+                <p>&copy; 2025 Salchipotato Manizales. Todos los derechos reservados.</p>
+            </div>
+    </footer>
+
+    <!-- Overlay para el zoom de imagen -->
+    <div class="zoom-overlay">
+        <img src="" alt="Imagen con zoom">
+        <span class="close-zoom">&times;</span>
+    </div>
+
+</body>
+</html>
